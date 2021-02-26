@@ -20,6 +20,6 @@ app.get("*", (req, res) => {
   res.redirect(site);
 });
 
-const listener = app.listen(process.env.PORT, () => {
+const listener = app.listen(80, () => {
   console.log("Your app is listening on port " + listener.address().port);
 });
